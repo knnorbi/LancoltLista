@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LancoltLista
 {
-    public class LancoltLista<T>
+    public class LancoltLista<T> : IEnumerable
     {
         LancoltListaElem<T> fej;
 
@@ -114,6 +115,11 @@ namespace LancoltLista
                 aktualisElem = aktualisElem.Kovetkezo;
             }
             return aktualisElem;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return new LancoltListaBejaro<T>(fej);
         }
 
         public T this[int index]

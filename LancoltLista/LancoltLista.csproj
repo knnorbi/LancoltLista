@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dummy.cs" />
     <Compile Include="LancoltLista.cs" />
+    <Compile Include="LancoltListaBejaro.cs" />
     <Compile Include="LancoltListaElem.cs" />
     <Compile Include="LancoltListaException.cs" />
     <Compile Include="LancoltListaUresExecption.cs" />

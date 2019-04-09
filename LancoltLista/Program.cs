@@ -25,6 +25,21 @@ namespace LancoltLista
             lancoltLista[0] = 2;
             //Console.WriteLine(lancoltLista[1]);
 
+            lancoltLista.BeszurasAzElejere(4);
+            lancoltLista.BeszurasAzElejere(5);
+            lancoltLista.BeszurasAzElejere(6);
+
+            foreach (int elem in lancoltLista)
+            {
+                Console.WriteLine(elem);
+            }
+
+            //Dummy d = new Dummy(10);
+            //foreach (var item in d)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
             Console.ReadKey();
         }
     }

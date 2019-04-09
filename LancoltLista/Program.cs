@@ -34,6 +34,18 @@ namespace LancoltLista
                 Console.WriteLine(elem);
             }
 
+            LancoltLista<int> lancoltLista2 = new LancoltLista<int>();
+
+            int a = lancoltLista.CompareTo(lancoltLista2);
+
+            List<LancoltLista<int>> lista = new List<LancoltLista<int>>();
+            lista.Add(lancoltLista2);
+            lista.Add(lancoltLista);
+            lista.Sort();
+
+            int[] asd = new int[] { 2, 1 };
+            Array.Sort(asd);
+
             //Dummy d = new Dummy(10);
             //foreach (var item in d)
             //{

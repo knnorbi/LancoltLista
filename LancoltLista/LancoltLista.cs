@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LancoltLista
 {
-    public class LancoltLista<T> : IEnumerable
+    public class LancoltLista<T> : IEnumerable, IComparable
     {
         LancoltListaElem<T> fej;
 
@@ -120,6 +120,15 @@ namespace LancoltLista
         public IEnumerator GetEnumerator()
         {
             return new LancoltListaBejaro<T>(fej);
+        }
+
+        public int CompareTo(object obj)
+        {
+            LancoltLista<T> masik = obj as LancoltLista<T>;
+
+            // TODO
+
+            return Meret.CompareTo(masik.Meret);
         }
 
         public T this[int index]
